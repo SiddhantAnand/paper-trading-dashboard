@@ -1,0 +1,531 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='robots' content='noindex,nofollow'><title>Weekly report 2026-W46</title><style>
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1f2937;background:#f5f7fb;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding:20px}
+.card{background:#fff;border-radius:12px;padding:18px 22px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);
+overflow-x:auto}
+h1{font-size:24px;margin:6px 0 2px;color:#0f172a} h2{font-size:18px;margin:22px 0 8px;color:#0f172a;
+border-bottom:2px solid #e5e7eb;padding-bottom:4px} h3{font-size:15px;margin:14px 0 6px;color:#334155}
+blockquote{margin:8px 0;padding:8px 14px;background:#eef2ff;border-left:4px solid #6366f1;color:#3730a3;border-radius:6px}
+blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px}
+th{background:#f1f5f9;text-align:left;font-weight:600;color:#334155}
+td,th{border:1px solid #e2e8f0;padding:7px 9px;vertical-align:top} tr:nth-child(even) td{background:#fafbfc}
+.kpis{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.kpi{flex:1 1 150px;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.kpi .l{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:22px;font-weight:700;margin-top:4px}
+.up{color:#047857}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}
+a{color:#4f46e5} nav a{margin-right:14px} em{color:#64748b}
+</style></head><body><div class='wrap'><nav class='muted'><a href='../index.html'>Dashboard</a><a href='../reports.html'>All reports</a><a href='../how.html'>How it works</a></nav><div class='card'><h1>Weekly paper-trading review - 2026-W46 (week of 2026-11-09)</h1>
+<p>Config version 1 | hold 1 | target +4.0% | stop -3.0% | threshold now 0.8 | risk x1.0 | shadow: {'policy': 'h1', 'hold': 1, 'tp': 4.0, 'sl': 3.0, 'thr': 0.4, 'slots': 2, 'started': '2026-10-16', 'evidence': {'oos': '2025-11..2026-10', 'trades': 252, 'avg_net': 0.6, 'win': 51.6, 'pf': 1.46, 'total': 101.5, 'wk8_median': 7.8, 'wk8_worst': -9.1, 'maxdd': -14.3}, 'name': 'score bar 0.4, up to 2 stocks, hold 1 day(s), target +4.0%, stop-loss -3.0%'}</p>
+<h2>This week vs whole run</h2>
+<table>
+<thead>
+<tr>
+<th>book</th>
+<th>week trades</th>
+<th>week win%</th>
+<th>week avg %</th>
+<th>week P&amp;L</th>
+<th>total trades</th>
+<th>total win%</th>
+<th>total avg %</th>
+<th>PF</th>
+<th>equity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>main</td>
+<td>7</td>
+<td>57.1</td>
+<td>0.5</td>
+<td>1217</td>
+<td>20</td>
+<td>65.0</td>
+<td>0.88</td>
+<td>1.82</td>
+<td>104,991</td>
+</tr>
+<tr>
+<td>lookalike</td>
+<td>7</td>
+<td>28.6</td>
+<td>-0.9</td>
+<td>-2045</td>
+<td>20</td>
+<td>40.0</td>
+<td>-0.38</td>
+<td>0.77</td>
+<td>97,290</td>
+</tr>
+<tr>
+<td>shadow</td>
+<td>6</td>
+<td>33.3</td>
+<td>-0.15</td>
+<td>648</td>
+<td>21</td>
+<td>33.3</td>
+<td>-0.57</td>
+<td>0.68</td>
+<td>96,120</td>
+</tr>
+</tbody>
+</table>
+<p>Research expectation: avg 0.85% / trade, win 55.6%, PF 1.73. Evidence: 20 main trades of ~80 needed for a confident verdict.</p>
+<h2>Trades closed this week</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">book</th>
+<th style="text-align: left;">sym</th>
+<th style="text-align: left;">entry_date</th>
+<th style="text-align: left;">exit_date</th>
+<th style="text-align: right;">entry_px</th>
+<th style="text-align: right;">exit_px</th>
+<th style="text-align: left;">reason</th>
+<th style="text-align: right;">ret_net</th>
+<th style="text-align: right;">pnl</th>
+<th style="text-align: right;">pred</th>
+<th style="text-align: right;">analog_avg</th>
+<th style="text-align: right;">cfg_ver</th>
+<th style="text-align: left;">lesson</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">HFCL</td>
+<td style="text-align: left;">2026-11-05</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">219.61</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: left;">gap_stop</td>
+<td style="text-align: right;">-3.36</td>
+<td style="text-align: right;">-575.53</td>
+<td style="text-align: right;">1.259</td>
+<td style="text-align: right;">-0.866</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">gapped below stop overnight (overnight risk); historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">STLTECH</td>
+<td style="text-align: left;">2026-11-05</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">757.75</td>
+<td style="text-align: right;">688</td>
+<td style="text-align: left;">gap_stop</td>
+<td style="text-align: right;">-9.55</td>
+<td style="text-align: right;">-3113.29</td>
+<td style="text-align: right;">-0.745</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">gapped below stop overnight (overnight risk)</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">AEROFLEX</td>
+<td style="text-align: left;">2026-11-06</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">483.3</td>
+<td style="text-align: right;">502.95</td>
+<td style="text-align: left;">gap_target</td>
+<td style="text-align: right;">3.72</td>
+<td style="text-align: right;">1221.18</td>
+<td style="text-align: right;">-0.153</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: gap_target; entered on -10.6% day, close-in-range 0.34, pred -0.15</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">HFCL</td>
+<td style="text-align: left;">2026-11-05</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">219.61</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: left;">gap_stop</td>
+<td style="text-align: right;">-3.36</td>
+<td style="text-align: right;">-796.89</td>
+<td style="text-align: right;">1.259</td>
+<td style="text-align: right;">-0.866</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">gapped below stop overnight (overnight risk); historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">KISSHT</td>
+<td style="text-align: left;">2026-11-06</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">346.9</td>
+<td style="text-align: right;">360.78</td>
+<td style="text-align: left;">target</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">1253.92</td>
+<td style="text-align: right;">1.722</td>
+<td style="text-align: right;">0.035</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: target; entered on +4.9% day, close-in-range 1.00, pred +1.72</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">KISSHT</td>
+<td style="text-align: left;">2026-11-06</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">346.9</td>
+<td style="text-align: right;">360.78</td>
+<td style="text-align: left;">target</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">1735.22</td>
+<td style="text-align: right;">1.722</td>
+<td style="text-align: right;">0.035</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: target; entered on +4.9% day, close-in-range 1.00, pred +1.72</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">KMEW</td>
+<td style="text-align: left;">2026-11-06</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">649</td>
+<td style="text-align: right;">665</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">2.12</td>
+<td style="text-align: right;">356.94</td>
+<td style="text-align: right;">1.112</td>
+<td style="text-align: right;">-1.512</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: time; entered on -79.4% day, close-in-range 0.98, pred +1.11</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">ACE</td>
+<td style="text-align: left;">2026-11-06</td>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">1167.05</td>
+<td style="text-align: right;">1166.75</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-0.38</td>
+<td style="text-align: right;">-122.77</td>
+<td style="text-align: right;">-0.244</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs)</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">TDPOWERSYS</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">606.95</td>
+<td style="text-align: right;">631.23</td>
+<td style="text-align: left;">target</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">1174.25</td>
+<td style="text-align: right;">0.831</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: target; entered on +6.2% day, close-in-range 0.78, pred +0.83</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">SETL</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">331.5</td>
+<td style="text-align: right;">344.76</td>
+<td style="text-align: left;">target</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">629.19</td>
+<td style="text-align: right;">1.342</td>
+<td style="text-align: right;">-0.829</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: target; entered on -3.8% day, close-in-range 0.07, pred +1.34</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">SETL</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">331.5</td>
+<td style="text-align: right;">344.76</td>
+<td style="text-align: left;">target</td>
+<td style="text-align: right;">3.65</td>
+<td style="text-align: right;">871.18</td>
+<td style="text-align: right;">1.342</td>
+<td style="text-align: right;">-0.829</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: target; entered on -3.8% day, close-in-range 0.07, pred +1.34</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">RAIN</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">167.8</td>
+<td style="text-align: right;">167.02</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-0.81</td>
+<td style="text-align: right;">-142.2</td>
+<td style="text-align: right;">0.934</td>
+<td style="text-align: right;">-0.352</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs); up-day but closed off highs; historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">MPHASIS</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">2380.8</td>
+<td style="text-align: right;">2409.9</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">0.87</td>
+<td style="text-align: right;">145.37</td>
+<td style="text-align: right;">0.865</td>
+<td style="text-align: right;">-0.518</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">worked: time; entered on -3.0% day, close-in-range 0.07, pred +0.86</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">BIRLACABLE</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">329.8</td>
+<td style="text-align: right;">321</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-3.02</td>
+<td style="text-align: right;">-975.52</td>
+<td style="text-align: right;">0.449</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no obvious flag - normal variance</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">GALLANTT</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">526.5</td>
+<td style="text-align: right;">527.7</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-0.12</td>
+<td style="text-align: right;">-39.21</td>
+<td style="text-align: right;">0.375</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs)</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">RAIN</td>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">167.8</td>
+<td style="text-align: right;">167.02</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-0.81</td>
+<td style="text-align: right;">-195.52</td>
+<td style="text-align: right;">0.934</td>
+<td style="text-align: right;">-0.352</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs); up-day but closed off highs; historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">SHARDACROP</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">745.5</td>
+<td style="text-align: right;">728.5</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-2.63</td>
+<td style="text-align: right;">-451.01</td>
+<td style="text-align: right;">0.91</td>
+<td style="text-align: right;">-0.755</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">lookalike</td>
+<td style="text-align: left;">KIRLPNU</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">661.05</td>
+<td style="text-align: right;">659.5</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-0.58</td>
+<td style="text-align: right;">-189.32</td>
+<td style="text-align: right;">0.482</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs)</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">SHARDACROP</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">745.5</td>
+<td style="text-align: right;">728.5</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-2.63</td>
+<td style="text-align: right;">-627.5</td>
+<td style="text-align: right;">0.91</td>
+<td style="text-align: right;">-0.755</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">historical analogs were negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">shadow</td>
+<td style="text-align: left;">KTKBANK</td>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">366.25</td>
+<td style="text-align: right;">362.4</td>
+<td style="text-align: left;">time</td>
+<td style="text-align: right;">-1.4</td>
+<td style="text-align: right;">-338.7</td>
+<td style="text-align: right;">0.758</td>
+<td style="text-align: right;">-1.284</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">historical analogs were negative</td>
+</tr>
+</tbody>
+</table>
+<h2>Loss reasons this week (main)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">lesson</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">historical analogs were negative</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">gapped below stop overnight (overnight risk)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">no follow-through, small time-exit loss (costs)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">up-day but closed off highs</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h2>Learning log this week</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">date</th>
+<th style="text-align: right;">train_rows</th>
+<th style="text-align: right;">thr</th>
+<th style="text-align: right;">risk_mult</th>
+<th style="text-align: right;">labelled</th>
+<th style="text-align: right;">corr</th>
+<th style="text-align: right;">above_thr</th>
+<th style="text-align: right;">above_thr_avg</th>
+<th style="text-align: right;">below_thr_avg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">55632</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2728</td>
+<td style="text-align: right;">0.159</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.68</td>
+<td style="text-align: right;">-0.55</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: right;">55761</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2849</td>
+<td style="text-align: right;">0.137</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.68</td>
+<td style="text-align: right;">-0.49</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">55906</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2977</td>
+<td style="text-align: right;">0.137</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">-0.46</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">56022</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3065</td>
+<td style="text-align: right;">0.128</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">0.76</td>
+<td style="text-align: right;">-0.47</td>
+</tr>
+</tbody>
+</table>
+<h2>Equity this week</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">date</th>
+<th style="text-align: right;">lookalike</th>
+<th style="text-align: right;">main</th>
+<th style="text-align: right;">shadow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2026-11-09</td>
+<td style="text-align: right;">97320.1</td>
+<td style="text-align: right;">104810</td>
+<td style="text-align: right;">96410.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-11</td>
+<td style="text-align: right;">96881.3</td>
+<td style="text-align: right;">104864</td>
+<td style="text-align: right;">96396.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-12</td>
+<td style="text-align: right;">97469.9</td>
+<td style="text-align: right;">105368</td>
+<td style="text-align: right;">96967.4</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-11-13</td>
+<td style="text-align: right;">97290.3</td>
+<td style="text-align: right;">104991</td>
+<td style="text-align: right;">96120.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Review checklist (/weekly-review)</h2>
+<ul>
+<li>Data problems: missing bars, odd prices, failed runs in data/paper/log.txt</li>
+<li>News or results around each losing trade (was it predictable?)</li>
+<li>Live results vs research expectation; do not change settings on fewer than ~20 trades</li>
+<li>Any change must pass research.py walk-forward, or run as a shadow book first</li>
+</ul></div></div></body></html>

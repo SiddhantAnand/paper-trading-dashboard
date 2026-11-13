@@ -1,0 +1,129 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='robots' content='noindex,nofollow'><title>Weekly report 2026-W41</title><style>
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1f2937;background:#f5f7fb;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding:20px}
+.card{background:#fff;border-radius:12px;padding:18px 22px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);
+overflow-x:auto}
+h1{font-size:24px;margin:6px 0 2px;color:#0f172a} h2{font-size:18px;margin:22px 0 8px;color:#0f172a;
+border-bottom:2px solid #e5e7eb;padding-bottom:4px} h3{font-size:15px;margin:14px 0 6px;color:#334155}
+blockquote{margin:8px 0;padding:8px 14px;background:#eef2ff;border-left:4px solid #6366f1;color:#3730a3;border-radius:6px}
+blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px}
+th{background:#f1f5f9;text-align:left;font-weight:600;color:#334155}
+td,th{border:1px solid #e2e8f0;padding:7px 9px;vertical-align:top} tr:nth-child(even) td{background:#fafbfc}
+.kpis{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.kpi{flex:1 1 150px;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.kpi .l{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:22px;font-weight:700;margin-top:4px}
+.up{color:#047857}.down{color:#b91c1c}.muted{color:#64748b;font-size:13px}
+a{color:#4f46e5} nav a{margin-right:14px} em{color:#64748b}
+</style></head><body><div class='wrap'><nav class='muted'><a href='../index.html'>Dashboard</a><a href='../reports.html'>All reports</a><a href='../how.html'>How it works</a></nav><div class='card'><h1>Weekly paper-trading review - 2026-W41 (week of 2026-10-05)</h1>
+<p>Config version 1 | hold 1 | target +4.0% | stop -3.0% | threshold now 1.0 | risk x1.0</p>
+<h2>This week vs whole run</h2>
+<table>
+<thead>
+<tr>
+<th>book</th>
+<th>week trades</th>
+<th>week win%</th>
+<th>week avg %</th>
+<th>week P&amp;L</th>
+<th>total trades</th>
+<th>total win%</th>
+<th>total avg %</th>
+<th>PF</th>
+<th>equity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>main</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>100,000</td>
+</tr>
+<tr>
+<td>lookalike</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>100,000</td>
+</tr>
+</tbody>
+</table>
+<p>Research expectation: avg 0.85% / trade, win 55.6%, PF 1.73. Evidence: 0 main trades of ~80 needed for a confident verdict.</p>
+<h2>Learning log this week</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">date</th>
+<th style="text-align: right;">train_rows</th>
+<th style="text-align: right;">thr</th>
+<th style="text-align: right;">risk_mult</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2026-10-07</td>
+<td style="text-align: right;">53074</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-10-08</td>
+<td style="text-align: right;">52517</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-10-09</td>
+<td style="text-align: right;">52678</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h2>Equity this week</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">date</th>
+<th style="text-align: right;">lookalike</th>
+<th style="text-align: right;">main</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2026-10-07</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: right;">100000</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-10-08</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: right;">100000</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026-10-09</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: right;">100000</td>
+</tr>
+</tbody>
+</table>
+<h2>Review checklist (/weekly-review)</h2>
+<ul>
+<li>Data problems: missing bars, odd prices, failed runs in data/paper/log.txt</li>
+<li>News or results around each losing trade (was it predictable?)</li>
+<li>Live results vs research expectation; do not change settings on fewer than ~20 trades</li>
+<li>Any change must pass research.py walk-forward, or run as a shadow book first</li>
+</ul></div></div></body></html>
